@@ -1,0 +1,22 @@
+{
+  "name": "HackerNewsWebApp",
+  "version": "0.1.0",
+  "authors": [
+    "Joel Kreutzwieser <kreutzwj@gmail.com>"
+  ],
+  "description": "A Web App for viewing Hacker News",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase-element": "GoogleWebComponents/firebase-element#~1.0.8"
+  }
+}
