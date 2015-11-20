@@ -6,7 +6,7 @@
   <script src="../bower_components/web-component-tester/browser.js"></script>
   <script src="../bower_components/test-fixture/test-fixture-mocha.js"></script>
 
-  <link rel="import" href="../hackernewswebapp-item.html">
+  <link rel="import" href="../elements/hackernewswebapp-item.html">
 </head>
 <body>
   <test-fixture id="hackernewswebapp-item">
@@ -22,8 +22,28 @@
       item = fixture('hackernewswebapp-item');
     });
 
-    test('is working', function() {
-      expect(item);
+    suite('with blank item', function() {
+      test('is working', function() {
+        expect(item);
+      });
+      test('has no title', function() {
+        expect(item.title).to.be.equal("");
+      });
+    });
+
+    suite('with screen data', function() {
+      setup(function() {
+
+        item.data = {"by":"dhouston","descendants":71,"id":8863,"kids":[8952,9224,8917,8884,8887,8943,8869,8958,9005,9671,9067,8940,8908,9055,8865,8881,8872,8873,8955,10403,8903,8928,9125,8998,8901,8902,8907,8894,8878,8980,8870,8934,8876],"score":111,"time":1175714200,"title":"My YC app: Dropbox - Throw away your USB drive","type":"story","url":"http://www.getdropbox.com/u/2/screencast.html"};
+      });
+
+      test('is working', function() {
+        expect(item);
+      });
+
+      test('has title', function() {
+        expect(item.title).to.be.equal("My YC app: Dropbox - Throw away your USB drive");
+    });
     });
   });
   </script>
