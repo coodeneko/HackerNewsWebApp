@@ -14,13 +14,13 @@ module.exports = {
       },
       {
         browserName: "chrome",
-        platform: "46",
-        version: "windows 10",
+        platform: "windows 10",
+        version: "46",
       },
       {
         browserName: "firefox",
-        platform: "42",
-        version: "windows 10",
+        platform: "windows 10",
+        version: "42",
       }
     ]
     }
