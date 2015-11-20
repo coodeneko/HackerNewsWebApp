@@ -21,6 +21,5 @@
     "web-component-tester": "Polymer/web-component-tester#~3.4.0"
   },
   "devDependencies": {
-    "test-fixture": "Polymer/test-fixture#~0.2.0"
   }
 }
