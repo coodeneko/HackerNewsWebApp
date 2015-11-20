@@ -26,6 +26,9 @@
       test('is working', function() {
         expect(item);
       });
+      test('has no type', function() {
+        expect(item.type).to.be.equal("");
+      });
       test('has no title', function() {
         expect(item.title).to.be.equal("");
       });
@@ -40,7 +43,9 @@
       test('is working', function() {
         expect(item);
       });
-
+      test('has type', function() {
+        expect(item.type).to.be.equal("story");
+      });
       test('has title', function() {
         expect(item.title).to.be.equal("My YC app: Dropbox - Throw away your USB drive");
     });

@@ -23,10 +23,17 @@ Polymer({
     title: {
       type: String,
       computed: 'computeTitle(data)'
+    },
+    type: {
+      type: String,
+      computed: 'computeType(data)'
     }
   },
   computeTitle: function(itemData) {
     return itemData.title || "";
+  },
+  computeType: function(itemData) {
+    return itemData.type || "";
   }
 });
 </script>

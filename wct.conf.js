@@ -11,7 +11,18 @@ module.exports = {
         version: "8.1",
         deviceName: "iPhone Simulator",
         "device-orientation": "portrait"
-      }]
+      },
+      {
+        browserName: "chrome",
+        platform: "46",
+        version: "windows 10",
+      },
+      {
+        browserName: "firefox",
+        platform: "42",
+        version: "windows 10",
+      }
+    ]
     }
   },
 };
